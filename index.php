@@ -14,23 +14,23 @@ if(isset($_SESSION['user_email'])){
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Footmarkz.com</title>
+    <title>Login - Registration.com</title>
     <link rel="stylesheet" href="style.css" media="all" type="text/css">
 </head>
 
 <body>
 
 <form action="" method="post">
-    <h2>User Login</h2>
+    <h2 style="background-color: gray">LOGIN</h2>
 
-    <div class="container">
+    <div class="container" style="background-color:gray">
         <label for="email"><b>Email</b></label>
         <input type="email" placeholder="Enter email" id="email" name="user_email" required>
 
         <label for="password"><b>Password</b></label>
         <input type="password" placeholder="Enter password" id="password" name="user_password" required>
 
-        <button type="submit">Login</button>
+        <button type="submit" style="background-color:darkolivegreen">Login</button>
     </div>
     <?php
     if(isset($success_message)){
@@ -40,8 +40,8 @@ if(isset($_SESSION['user_email'])){
         echo '<div class="error_message">'.$error_message.'</div>';
     }
     ?>
-    <div class="container" style="background-color:#f1f1f1">
-        <a href="signup.php"><button type="button" class="Regbtn">Create an account</button></a>
+    <div class="container" style="background-color:black">
+        <a href="signup.php"><button type="button" class="Regbtn" style="background-color: gray">Sign up</button></a>
     </div>
 </form>
 </body></html>

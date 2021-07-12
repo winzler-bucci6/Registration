@@ -22,7 +22,7 @@ if(isset($_SESSION['user_email']) && !empty($_SESSION['user_email'])){
     <title>Home</title>
     <style>
         a, a:visited{
-            color: #0000EE;
+            color: goldenrod;
         }
         a:hover{
             color: #EE0000;
